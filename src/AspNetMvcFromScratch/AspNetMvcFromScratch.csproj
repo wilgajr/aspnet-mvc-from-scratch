@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="node_modules\jquery\lib\jquery\dist\jquery.js" />
+    <None Include="node_modules\jquery\lib\jquery\dist\jquery.slim.js" />
+  </ItemGroup>
+
 </Project>

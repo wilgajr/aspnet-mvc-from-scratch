@@ -24,22 +24,13 @@ namespace AspNetMvcFromScratch
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-
-                // Expose node_modules folder for development cenarios
-                var nodeModulesPath = Path.Combine(Directory.GetCurrentDirectory(), "node_modules");
-
-                app.UseStaticFiles(new StaticFileOptions()
-                {
-                    FileProvider = new PhysicalFileProvider(nodeModulesPath),
-                    RequestPath = new PathString("/node_modules")
-                });
             }
             else
             {
                 // TODO: 404 error page
-                app.UseStaticFiles();
             }
-            
+
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

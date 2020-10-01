@@ -1,0 +1,10 @@
+[
+
+  {
+    "outputFileName": "wwwroot/lib/jquery/dist/jquery.slim.js",
+    "inputFiles": [
+      "node_modules/jquery/dist/jquery.slim.js"
+    ],
+    "minify": { "enabled": false }
+  }
+]
