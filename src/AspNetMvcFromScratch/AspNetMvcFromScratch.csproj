@@ -5,8 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\lib\boostrap.js" />
+    <Content Remove="wwwroot\lib\popper.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\boostrap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\popper.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="node_modules\jquery\lib\jquery\dist\jquery.js" />
     <None Include="node_modules\jquery\lib\jquery\dist\jquery.slim.js" />
+    <None Include="wwwroot\lib\boostrap.js" />
+    <None Include="wwwroot\lib\popper.js" />
   </ItemGroup>
 
 </Project>
