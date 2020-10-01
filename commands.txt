@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+                                    git
+-------------------------------------------------------------------------------
+- Cloning a repo
+git clone [repo]
+
+-Set a username
+git config --global user.name "[username]"
+
+- Check username
+git config --global user.name
+
+-Set a email
+git config --global user.email "[email]"
+
+-Check email
+git config --global user.email
+
+-Add remote origin
+git remote add origin [origin as seen in github]
+
+-Check for changes
+git status
+
+-Add untracked files
+git add *
+
+-Commit
+git commit -m "[message]"
+
+-Push
+git push origin [branch, usually master]
+-------------------------------------------------------------------------------
+                                    npm
+-------------------------------------------------------------------------------
+- New package.json file
+npm init
+
+- Install package
+npm install [package]
+
+-------------------------------------------------------------------------------
+                                    dotnet
+-------------------------------------------------------------------------------
+- New Web (Empty) project
+dotnet new Web
+
+- New xunit project
+dotnet new xunit
+
+- Add reference to another project
+dotnet add reference [csproj file path]
+
+- Create a solution file
+dotnet new sln
+
+- Reference a project in a solution file
+dotnet sln add [csproj file path]
+
+- Build a solution
+dotnet build
+
+-------------------------------------------------------------------------------
+                                    ssh
+-------------------------------------------------------------------------------
+- Generate SSH key
+ssh-keygen -t rsa -b 4096 -C "[email]"
+
+-Start SSH Agent
+eval $(ssh-agent -s)
+
+-Add key
+ssh-add ~/.ssh/id_rsa
