@@ -60,6 +60,9 @@ dotnet sln add [csproj file path]
 - Build a solution
 dotnet build
 
+-Install Entity Framework Tool Globally
+dotnet tool install dotnet-ef -g
+
 -------------------------------------------------------------------------------
                                     ssh
 -------------------------------------------------------------------------------
